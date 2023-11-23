@@ -19,25 +19,107 @@ Get to grips with the basics of General AI and how it's changing the industry.
 
 <CardGroup>
 
-<Card title="EDM Generation" icon="newspaper">
+<Card title="EDM Generation" icon="newspaper" href="#edm-generation">
   Generate hypersonalized EDMs to target specific groups of customers.
 </Card>
 
-<Card title="Customer Sentiment Analysis" icon="person">
+<Card title="Customer Sentiment Analysis" icon="person" href = '#customer-sentiment-analysis'>
   Analyze and understand customer's real-time sentiment and needs.
 </Card>
 
-<Card title="Document Summariser" icon="file">
+<Card title="Document Summariser" icon="file" href="#document-summariser">
   Summarise project documents or task lists and extract relevant information. 
 </Card>
 
-<Card title="Q&A Bot" icon="robot" href="#real-world-applications">
+<Card title="Q&A Bot" icon="robot" href="#question-and-answer-bot">
   Retrieve relevant answers from a folder of documents. Train the bot to cater to your needs.
 </Card>
 
 </CardGroup>
 
-### Real-World Applications
+#### EDM Generation
+
+<AccordionGroup>
+  <Accordion title="Email Content Generation">
+Utilize GEN-AI to generate text by inputting the target group profile and campaign content. 
+  ```md Example Prompt
+You are a hypersonalized email content generator for a marketing team in a telco industry called M1. Keep the email short in 1-2 sentences and straight to the point. 
+You will be given a marketing campaign message and a customer profile. Content is: {campaign_message}. 
+Study the customer profile well, the profile is: {profile} and craft a hypersonalized email content based off the where the customer profile and the campaign context.
+Always start with Hi customer's name! Do not sign off. Make sure theres a direct Benefit, price.
+ Add a Call for Action at the last sentence. Remember, keep the email very short and summarised and be very cheerful and excited. 
+  ```
+
+*Load in Campaign Content:*
+ <img
+  style={{ borderRadius: '0.5rem',width: '500px', height: 'auto' }}
+  src="https://github.com/M1-Private-Limited/filedump/blob/main/loaded1.png?raw=true"
+/> 
+
+
+*Load in Customer Profile:*
+ <img
+  style={{ borderRadius: '0.5rem',width: '500px', height: 'auto' }}
+  src="https://github.com/M1-Private-Limited/filedump/blob/main/loaded2.png?raw=true"
+/> 
+
+*Generated personalized email:*
+ <img
+  style={{ borderRadius: '0.5rem',width: '500px', height: 'auto' }}
+  src="https://github.com/M1-Private-Limited/filedump/blob/main/loaded3.png?raw=true"
+/> 
+
+
+  </Accordion>
+  <Accordion  title="Image Generation">
+    Using image generators like Midjourney, Dalle3, Stable Diffusion and overlay those images who texts, we can generate realistic advertisements in a few minutes and cents.
+
+
+<Tabs>
+  <Tab title="Image Generated">
+  *Example Ad to target young female audience who are interested in Japan:*
+  <img
+    style={{ borderRadius: '0.5rem', width: '500px', height: 'auto' }}
+    src="https://github.com/M1-Private-Limited/filedump/blob/main/japanroam.png?raw=true"
+  /> 
+  
+    </Tab>
+  <Tab title="Image Prompt">
+  ```md Image Prompt
+A single asian young woman wearing an orange traditional japan clothing, she is holding a mobile phone and smiling, 
+mount fuji background with cherry blossom. Orange flare, golden afternoon sun. --ar 1:1
+  ```
+  </Tab>
+
+</Tabs>
+
+<Tabs>
+  <Tab title="Image Generated">
+  *Example Ad to young male adult who are interested in gaming:*
+  <img
+    style={{ borderRadius: '0.5rem', width: '500px', height: 'auto' }}
+    src="https://github.com/M1-Private-Limited/filedump/blob/main/Title%20(1).png?raw=true"
+  />
+    </Tab>
+  <Tab title="Image Prompt">
+  ```md Image Prompt
+ultra-realistic photograph captured with a Sony α7 III camera, equipped with an 85mm lens at F 1.2 aperture setting 
+of 2 asian teenagers smiling and playing with their phones, orange rays of light is surrounding them 
+  ```
+  </Tab>
+
+</Tabs>
+
+
+
+
+
+
+  </Accordion>
+</AccordionGroup>
+
+
+#### Customer Sentiment Analysis
 
 <AccordionGroup>
   <Accordion icon="users" title="Improving Customer Service">
@@ -47,6 +129,41 @@ Get to grips with the basics of General AI and how it's changing the industry.
     Learn how GEN-AI assists in optimizing network operations and maintenance for better efficiency.
   </Accordion>
 </AccordionGroup>
+
+
+
+#### Document Summariser
+
+<AccordionGroup>
+  <Accordion icon="users" title="Improving Customer Service">
+    See how GEN-AI can automate and personalize customer interactions, leading to improved customer satisfaction.
+  </Accordion>
+  <Accordion icon="chart-network" title="Network Optimization">
+    Learn how GEN-AI assists in optimizing network operations and maintenance for better efficiency.
+  </Accordion>
+</AccordionGroup>
+
+
+
+
+#### Question and Answer Bot
+
+<AccordionGroup>
+  <Accordion icon="users" title="Improving Customer Service">
+    See how GEN-AI can automate and personalize customer interactions, leading to improved customer satisfaction.
+  </Accordion>
+  <Accordion icon="chart-network" title="Network Optimization">
+    Learn how GEN-AI assists in optimizing network operations and maintenance for better efficiency.
+  </Accordion>
+</AccordionGroup>
+
+
+
+
+
+
+
+
 
 ## Professional GEN-AI Prompts for Telecom
 

@@ -1,18 +1,18 @@
 {
   "name": "M1-GPT",
   "logo": {
-    "dark": "/logo/m1-gpt.svg",
-    "light": "/logo/m1-gpt.svg"
+    "dark": "https://github.com/M1-Private-Limited/filedump/blob/main/M1-GPT.png?raw=true",
+    "light": "/logo/m1logo.svg"
   },
-"favicon": "/favicon.svg",
-"colors": {
-  "primary": "#FFA500",
-  "light": "#FFA500",
-  "dark": "#FF8C00",
-  "anchors": {
-    "from": "#FF8C00",
-    "to": "#FFA500"
-  }
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#FFA500",
+    "light": "#FFA500",
+    "dark": "#FF8C00",
+    "anchors": {
+      "from": "#FF8C00",
+      "to": "#FFA500"
+    }
   },
   "anchors": [
     {
@@ -24,7 +24,7 @@
   "navigation": [
     {
       "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
+      "pages": ["quickstart", "development"]
     },
     {
       "group": "API Documentation",
