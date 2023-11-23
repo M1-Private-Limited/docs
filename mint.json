@@ -22,16 +22,10 @@
   },
   "anchors": [
     {
-      "name": "API Components",
-      "icon": "rectangle-terminal",
+      "name": "Showcase",
+      "icon": "video",
       "color": "#f59f0b",
       "url": "api-components"
-    },
-    {
-      "name": "Community",
-      "icon": "comments",
-      "color": "#2564eb",
-      "url": "https://discord.gg/MPNgtSZkgK"
     }
   ],
   "navigation": [
