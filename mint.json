@@ -1,8 +1,8 @@
 {
   "name": "M1-GPT",
   "logo": {
-    "dark": "/logo/m1-gpt2.png",
-    "light": "/logo/m1-gpt2.png"
+    "dark": "/logo/m1-gpt.svg",
+    "light": "/logo/m1-gpt.svg"
   },
 "favicon": "/favicon.svg",
 "colors": {
