@@ -1,5 +1,5 @@
 ---
-title: 'GEN-AI in Telecom'
+title: 'All You Need to Know About GEN-AI'
 description: 'Discover the transformative potential of General AI in the telecom industry and explore practical applications.'
 ---
 
@@ -13,7 +13,34 @@ Get to grips with the basics of General AI and how it's changing the industry.
   <Accordion icon="lightbulb" title="The Basics of Gen-AI">
     General AI, used in ChatGPT, is a form of artificial intelligence that can understand, learn, and apply its knowledge across a wide range of tasks, much like a human brain. Unlike traditional AI, which is specialized for specific tasks, GEN-AI has the versatility to handle various problems and situations, making it more adaptable and intelligent in different environments.
   </Accordion>
+  <Accordion icon="lightbulb" title="Types of of Gen-AI">
+  <img
+  style={{ borderRadius: '0.5rem' }}
+  src="https://github.com/ONGQ0019/filedumps/blob/main/types_genai.png?raw=true"
+/>
+  </Accordion>
 </AccordionGroup>
+
+### Why is GEN-AI important?
+
+<AccordionGroup>
+  <Accordion icon="lightbulb" title="GEN-AI Features">
+Solve complex problems that humans may struggle with by analyzing data, identifying patterns, and generating innovative solutions. This can drive advancements in fields like healthcare, climate change, and technology.
+
+Automate repetitive and mundane tasks, allowing humans to focus on more creative and strategic activities. This can lead to increased productivity, cost savings, and improved efficiency in industries such as manufacturing, logistics, and customer service.
+  </Accordion>
+
+  <Accordion icon="lightbulb" title="Labour Market Perception of GEN-AI">
+>“Generative AI is a game-changer for the labour market. It can help us find the best talent, match them with the right roles, and develop their skills and potential. It can also help us create a more diverse and inclusive workforce, by reducing bias and increasing access to opportunities.” ~ Jeff Weiner, former CEO of LinkedIn
+
+> “Generative AI is the most powerful tool for creativity that has ever been created. It has the potential to unleash a new era of human innovation.” ~ Elon Musk, CEO of Tesla
+
+> “Generative AI is a game-changer for business. It can help us generate new ideas, products, and services, faster and better than ever before. It can also help us optimize our processes, operations, and decisions, by providing us with data-driven recommendations and solutions. It can transform every industry and every function, by creating new sources of value and competitive advantage.” ~ Satya Nadella, CEO of Microsoft
+  </Accordion>
+
+</AccordionGroup>
+
+
 
 ### Examples of GEN-AI integration
 
@@ -23,8 +50,8 @@ Get to grips with the basics of General AI and how it's changing the industry.
   Generate hypersonalized EDMs to target specific groups of customers.
 </Card>
 
-<Card title="Customer Sentiment Analysis" icon="person" href = '#customer-sentiment-analysis'>
-  Analyze and understand customer's real-time sentiment and needs.
+<Card title="Enhancing Image Analysis with GEN-AI" icon="eye" href = '#enhancing-image-analysis'>
+Utilize GEN-AI and computer vision to analyze diagrams and images. Unlike traditional OCR, GEN-AI understands visual content and provides appropriate responses to users.
 </Card>
 
 <Card title="Document Summariser" icon="file" href="#document-summariser">
@@ -119,22 +146,73 @@ of 2 asian teenagers smiling and playing with their phones, orange rays of light
 </AccordionGroup>
 
 
-#### Customer Sentiment Analysis
+#### Enhancing Image Analysis
 
 <AccordionGroup>
-  <Accordion icon="users" title="Improving Customer Service">
-    See how GEN-AI can automate and personalize customer interactions, leading to improved customer satisfaction.
-    in mdx, will this work?
-<video 
-  autoplay="true"
-  muted 
-  style={{ maxWidth: '100%', height: 'auto' }}
->
-  <source src="https://github.com/M1-Private-Limited/filedump/raw/main/mattflowvid2.mp4" />
-</video>
+  <Accordion  title="Summarising complicated diagrams">
+  GEN-AI can easily analyse complicated dashboards or diagrams to give a layman text summary to the reader. 
+  <Tabs>
+  <Tab title="Original Tech Architect Diagram">
+  <img
+    style={{ borderRadius: '0.5rem', width: '500px', height: 'auto' }}
+    src="https://github.com/ONGQ0019/filedumps/blob/main/example_tech.png?raw=true"
+  /> 
+  
+    </Tab>
+  <Tab title="GEN-AI Analysis">
+  ```md GEN-AI Layman Summary
+This diagram is like a blueprint that shows the different parts of a software system and how they connect.
+
+The "Clients" part refers to the apps that people use on their phones or computers. These are made with a tool called Flutter, which works for Android, iPhone, and web browsers.
+
+The "Apps" section is the heart of the system where all the main functions happen. It's organized into small, independent services that talk to each other. They handle requests from the user apps through a sort of traffic director (API Gateway) that's set up on Amazon's cloud service. This part also includes tools to manage the code, keep secrets safe, and check that everything is running smoothly.
+
+The "Data" part deals with storing and organizing information. It has two main types of storage: one for detailed data like user profiles (Metadata) and another for files like photos and videos (Media). There's also a quick-access memory (Caching layer) to make common data retrievable faster.
+
+The "3rd Party Apps" are additional services from other companies that the system uses for specific tasks like chatting, verifying user identities, helping customers, processing payments, sending emails and text messages, and creating user avatars (like profile pictures).
+
+In simple terms, this system is a complex network that supports a software application, handling everything from the app on your phone to the servers that process and store your data, with lots of security and tools to monitor how well everything is working.
+  ```
+  </Tab>
+
+</Tabs>
+
   </Accordion>
-  <Accordion icon="chart-network" title="Network Optimization">
-    Learn how GEN-AI assists in optimizing network operations and maintenance for better efficiency.
+  <Accordion  title="Email Content Automation">
+<Steps>
+  <Step title="First Step">
+Use a python script to scrape all emails related to the subject title you are interested in e.g. ['HR_COMMS'].    
+  </Step>
+  <Step title="Second Step">
+Extract texts and images from scraped emails. Pass the images through GEN-AI to extract information on those images.
+  <img
+    style={{ borderRadius: '0.5rem', width: '200px', height: 'auto' }}
+    src="https://github.com/ONGQ0019/filedumps/blob/main/hr_comms.png?raw=true"
+  /> 
+  </Step>
+  <Step title="Third Step">
+Recompile the contents from the images and texts. Reroute the recomplied contents to target emails.
+
+  <Accordion title="Example of consolidated content">
+Event 1: Deepavali Special Arrangements
+- Deepavali falls on Sunday, November 12th, so there will be a public holiday on Monday, November 13th.
+- If you were scheduled to work on the 13th, your manager will inform you about getting a day off to make up for it.
+- On Tuesday, November 14th, you'll have the option to work from home, depending on operational needs.
+- On November 13th, there won't be any trunk bus service, but a shuttle bus service will be available according to the Weekend Public Holiday schedule. Bus services on November 14th will remain unchanged.
+
+Event 2: Upgrades to Work SIMs and Staff Mobile Plans
+- Starting from November 22nd, our work SIMs will have an increased data allowance from 60GB to 130GB.
+- A new feature called 'Data Passport' will allow you to use your work SIM in up to 72 countries, with a monthly cap of 15GB.
+- Additional features like True 5G, Caller Number Display, Unlimited Talk Time, and 100 SMS will be added to our work SIMs.
+- Legacy work SIMs and the existing Staff Family & Friends plan will be migrated on November 22nd.
+- Click on the 'learn more' button at the bottom of the image for detailed information about these upgrades.
+
+We are excited about these enhancements and hope you will enjoy the benefits of the upgraded work SIMs and staff mobile plans. If you have any questions, feel free to ask!
+  </Accordion>
+
+
+  </Step>
+</Steps>
   </Accordion>
 </AccordionGroup>
 
@@ -143,11 +221,44 @@ of 2 asian teenagers smiling and playing with their phones, orange rays of light
 #### Document Summariser
 
 <AccordionGroup>
-  <Accordion icon="users" title="Improving Customer Service">
-    See how GEN-AI can automate and personalize customer interactions, leading to improved customer satisfaction.
+  <Accordion title="Grouping and summarising similar incidents">
+ <Steps>
+  <Step title="First Step">
+Upload incidents excel/csv. Example of incidents file:
+  <img
+    style={{ borderRadius: '0.5rem', width: '200px', height: 'auto' }}
+    src="https://github.com/ONGQ0019/filedumps/blob/main/incidents.PNG?raw=true"
+  />     
+  </Step>
+  <Step title="Second Step">
+Prompt GEN-AI to summarise and group similar results together.
+  <Accordion title="Sample Results">
+Here's how we can categorize the incidents:
+
+Email Access Issues:
+Incident 1: Employee unable to access email due to password reset issue.
+Incident 5: Email access issue similar to Incident 001.
+
+VPN Connection Issues:
+Incident 4: VPN connection unstable, dropping frequently.
+Incident 10: Unstable VPN connection with different error messages.
+
+Network and Connection Issues:
+Incident 3: Printer not connecting to the network.
+Incident 7: Slow internet speed reported.
+Incident 8: Company intranet page not loading.
+
+Hardware/Software Failures and Permissions:
+Incident 2: Workstation experiencing blue screen errors.
+Incident 6: Unable to open a shared company document.
+Incident 9: Repeated software crash in accounting application.
   </Accordion>
-  <Accordion icon="chart-network" title="Network Optimization">
-    Learn how GEN-AI assists in optimizing network operations and maintenance for better efficiency.
+
+  </Step>
+  </Steps>
+  </Accordion>
+  <Accordion title="Sumamrising Vendor's proposal">
+  GEN-AI can extract key information from a vendor's proposal and summarise it for the users. Alternatively, we can use GEN-AI to craft proposals based on our content inputs. With GPT-4, GEN-AI can take in more than 300 pages of pdf documents.
   </Accordion>
 </AccordionGroup>
 
@@ -157,22 +268,110 @@ of 2 asian teenagers smiling and playing with their phones, orange rays of light
 #### Question and Answer Bot
 
 <AccordionGroup>
-  <Accordion icon="users" title="Improving Customer Service">
-    See how GEN-AI can automate and personalize customer interactions, leading to improved customer satisfaction.
+  <Accordion title="Knowledge-based bot">
+ GEN-AI can be used to quickly retrieve relevant answers from a sea of documents. An exampleo of this implentation is Matt 2.0, a HR chatbot designed to answer any questions regarding M1's policies. 
+
+ **Framework:**
+    <video 
+  autoplay="true"
+  muted 
+  style={{ maxWidth: '100%', height: 'auto' }}
+>
+  <source src="https://github.com/M1-Private-Limited/filedump/raw/main/mattflowvid2.mp4" />
+</video>
+---
+ **Example:**
+   <img
+    style={{ borderRadius: '0.5rem', width: '600px', height: 'auto' }}
+    src="https://github.com/ONGQ0019/filedumps/blob/main/trunk.png?raw=true"
+  />     
+
   </Accordion>
-  <Accordion icon="chart-network" title="Network Optimization">
-    Learn how GEN-AI assists in optimizing network operations and maintenance for better efficiency.
+  <Accordion title="DocStream bot">
+  Expanding on knowledge-based bot, we can merge all (non-sensitive) documents in a large database to create a streamlined, efficient process for retrieving documents via GEN-AI.
+
+ **Example of Reservior:**
+   <img
+    style={{ borderRadius: '0.5rem', width: '200px', height: 'auto' }}
+    src="https://github.com/ONGQ0019/filedumps/blob/main/cap1.PNG?raw=true"
+  />  
+  ---
+ **Example output for M1 Web:**
+   <img
+    style={{ borderRadius: '0.5rem', width: '500px', height: 'auto' }}
+    src="https://github.com/ONGQ0019/filedumps/blob/main/cap2.PNG?raw=true"
+  />  
   </Accordion>
 </AccordionGroup>
 
 
 
 
+## How to write GEN-AI prompts
+To write effective prompts for generative AI, consider the following four tips:
+
+<Tip> 1. Be Specific: Detail your request including topic, response length, style, structure, intent, and output format.</Tip>
+<Tip> 2. Provide Context: Offer relevant background information to help the AI understand your topic better.</Tip>
+
+<Tip>3. Ask Single Questions: Stick to one question or request at a time for clearer responses.</Tip>
+
+<Tip>4. Experiment and Iterate: If unsatisfied with the response, rephrase or add more details to your prompt.</Tip>
 
 
 
 
+### GEN-AI Prompts Templates
+<AccordionGroup>
+  <Accordion title="Show Templates">
+  ```md  Sales Strategist
+> Summarize the key points of from the sales excel, emphasise on our competitve positioning based on our product details
+> I want you to act as a salesperson. Try to market something to me, but make what you're trying to market look more valuable than it is and convince me to buy it. Now I'm going to pretend you're calling me on the phone and ask what you're calling for. Hello, what did you call for?
+```
 
-## Professional GEN-AI Prompts for Telecom
+  ```md  IT Support
+> Above is the csv of today's incidents. Group the similar incidents together and prioritise accordingly. 
+> Above is an image of an IT issue. What are the steps to take to resolve this?
+```
 
-Discover specific prompts that can help you leverage GEN-AI in your role.
+  ```md  Data Analyst
+> Look at the CSV files, give me the steps to combine the files and load it into snowflake.
+> I want you to act as a SQL terminal in front of an example database. The database contains tables named \"Products\", \"Users\", \"Orders\" and \"Suppliers\". I will type queries and you will reply with what the terminal would show. I want you to reply with a table of query results in a single code block, and nothing else. Do not write explanations. Do not type commands unless I instruct you to do so. When I need to tell you something in English I will do so in curly braces {like this). My first command is 'SELECT TOP 10 * FROM Products ORDER BY Id DESC'
+```
+
+  ```md  UI/UX
+> I want you to act as a UX/UI developer. Here is an image of the design of an app, and it will be your job to come up with creative ways to improve its user experience. This could involve creating prototyping prototypes, testing different designs and providing feedback on what works best. 
+```
+
+  ```md  Marketer
+> I want you to act as a image prompt generator. I will provide you with my target profile and campaign details. Your job is to give me an image prompt that will generate an image that suits my campaign purpose.
+> Look at my marketing ad image and my campaign content, what would be a suitable ad-headline for this?
+```
+
+  ```md  Human Resource
+> Above is the pdf of our partner's new product. I wish to announce to my company's employees that we are having a sale of this product. Craft for me the email. 
+> Look at this pdf which contains a propsective employee's resume. He is applying for a junior data scientist role in our company. Here is our company job description: {jd}. Compare his resume with the company's job description and give me a summary on why I should/should not hire him and why.
+```
+
+  ```md  Data Scientist
+> You are a review sentiment & summary bot for a telco company. Look at these reviews over a month period. {review_text}. From all these reviews and Sumamrise the customer reviews. And then from these  6 main issues ['Customer Service', 'Mobile Application/Website','Network Coverage', 'Plan Price', 'Competitior','Business Practice'], i need you to give me your ranking based on the appearance of these main issues and whether customers said something postivie or negative on this issue in this format. Summary of all customers reviews: blah blah blah. Rank 1: Network Coverage, poor as... Rank 2: Customer Service, very poor as... continue all the way to Rank 6. Rank 1 = appear the most number of times in the reviews
+> You are machine learning expert. Look at my current model. Suggest for me techniques I can apply to improve the accuracy of said model. 
+```
+
+  ```md  Cyber Security Specialist
+> I want you to act as a cyber security specialist. Look at the tech architect diagram in the image above on how data is stored and shared, and it will be your job to come up with strategies for protecting this data from malicious actors. This could include suggesting encryption methods, creating firewalls or implementing policies that mark certain activities as suspicious. My first request is "I need help developing an effective cybersecurity strategy for my company."
+```
+and many more...
+  </Accordion>
+</AccordionGroup>
+
+
+## Limitations of GEN-AI
+When using generative AI, be aware of its current limitations:
+
+<Warning>1. Real-Time Information Limitation: Generative AI and large language models lack access to the latest information (unless it has access to the web). They're not ideal for acquiring current news or live data.</Warning>
+
+<Warning>2. Mathematical Limitations: Generative AI handles basic arithmetic but may falter with complex math like statistical analysis, though future improvements are likely.</Warning>
+
+<Warning>3. Restrictions on Data Usage: Exercise caution with data entered into AI tools. Refrain from using sensitive customer data, personally identifiable information, or data under non-disclosure agreements without proper legal and security clearances.</Warning>
+
+<Warning>4. Potential for AI Hallucinations: Be aware that generative AI can create 'hallucinations' or false information. Always double-check the accuracy of AI-generated content.</Warning>
