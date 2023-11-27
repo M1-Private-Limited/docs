@@ -16,7 +16,7 @@
   },
   "anchors": [
     {
-      "name": "API Reference",
+      "name": "Video Examples",
       "icon": "video",
       "url": "api-reference"
     }
@@ -27,7 +27,7 @@
       "pages": ["quickstart", "development"]
     },
     {
-      "group": "API Documentation",
+      "group": "Video Examples",
       "pages": ["api-reference/introduction"]
     }
   ]
