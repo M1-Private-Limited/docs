@@ -1,98 +1,165 @@
 ---
-title: 'Development'
-description: 'Learn how to preview changes locally'
+title: 'M1-GPT: Chatgpt but for M1'
+description: 'Learn more about M1-GPT. Try it out [here](https://m1-gpt.vercel.app)'
 ---
 
-<Info>
-  **Prerequisite** You should have installed Node.js (version 18.10.0 or
-  higher).
-</Info>
+## Why build M1-GPT?
 
-Step 1. Install Mintlify on your OS:
+> Better GPT: Faster response time than public ChatGPT since requests are routed to internal APIs. M1-GPT has in-depth customization and contextual prompts.
 
-<CodeGroup>
+> Access to Data Reservoir: Connect M1-GPT to our own M1 Data Reservoir to get tailored answers based on our M1 data.
 
-```bash npm
-npm i -g mintlify
-```
+> Cost Savings: GPT-4 is currently only available to 'ChatGPT Plus' subscribers ($20 USD/month). With M1-GPT, everyone can access GPT-4's x10 parameter model even without a subscription via a pay per use pricing model.
 
-```bash yarn
-yarn global add mintlify
-```
+> Data Safety: Public ChatGPT collects and train users' data. M1-GPT's Azure Enterprise API will not collect and train any users' data.
 
-</CodeGroup>
+> Cyber Security: M1-GPT is hosted on M1's Azure app service and requires M1 network to be accessible.
 
-Step 2. Go to the docs are located (where you can find `mint.json`) and run the following command:
 
-```bash
-mintlify dev
-```
+## Functionalities of M1-GPT
 
-The documentation website is now available at `http://localhost:3000`.
 
-### Custom Ports
+<CardGroup>
 
-Mintlify uses port 3000 by default. You can use the `--port` flag to customize the port Mintlify runs on. For example, use this command to run in port 3333:
+<Card title="Text to Text Generation" icon="newspaper" href="#text-to-text-generation">
+  M1-GPT has both GPT-3.5 and GPT-4. With GPT-3.5, user input is limited to 3,000 words. But with GPT-4, the limit is increased to 100,000 words. 
+</Card>
 
-```bash
-mintlify dev --port 3333
-```
+<Card title="PNG/CSV/PDF/DOCX to Text Generation" icon="file" href = '#file-to-text-generation'>
+  You can upload the supported file document and M1-GPT will extract the relevant contexts.
+</Card>
 
-You will see an error like this if you try to run Mintlify in a port that's already taken:
+<Card title="Text to Image Generation" icon="image" href='#text-to-image-generation'>
+  Mainly used for EDM content generation, with a simple text prompt, M1-GPT can generate ultra-realistic images.
+</Card>
 
-```md
-Error: listen EADDRINUSE: address already in use :::3000
-```
+<Card title="Text to Text with M1 Documents" icon="robot" href="#text-to-text-with-m1-documents">
+  By referencing to the M1 Data Reservior, M1-GPT can provide relevant answers based on the context given. 
+</Card>
 
-## Mintlify Versions
+</CardGroup>
 
-Each CLI is linked to a specific version of Mintlify. Please update the CLI if your local website looks different than production.
 
-<CodeGroup>
 
-```bash npm
-npm i -g mintlify@latest
-```
 
-```bash yarn
-yarn global upgrade mintlify
-```
 
-</CodeGroup>
 
-## Deployment
-
-<Tip>
-  Unlimited editors available under the [Startup
-  Plan](https://mintlify.com/pricing)
-</Tip>
-
-You should see the following if the deploy successfully went through:
-
-<Frame>
-  <img src="/images/checks-passed.png" style={{ borderRadius: '0.5rem' }} />
-</Frame>
-
-## Troubleshooting
-
-Here's how to solve some common problems when working with the CLI.
+## Text to Text Generation
 
 <AccordionGroup>
-  <Accordion title="Mintlify is not loading">
-    Update to Node v18. Run `mintlify install` and try again.
-  </Accordion>
-  <Accordion title="No such file or directory on Windows">
-Go to the `C:/Users/Username/.mintlify/` directory and remove the `mint`
-folder. Then Open the Git Bash in this location and run `git clone
-https://github.com/mintlify/mint.git`.
+  <Accordion title="Just Like ChatGPT">
+Ask M1-GPT anything. How to create an Excel macro? How to interpret this Tableau Calculated Field? How to start learning about LLMs?
 
-Repeat step 3.
-
-  </Accordion>
-  <Accordion title="Getting an unknown error">
-    Try navigating to the root of your device and delete the ~/.mintlify folder.
-    Then run `mintlify dev` again.
+ **Example:**
+   <img
+    style={{ borderRadius: '0.5rem', width: '500px', height: 'auto' }}
+    src="https://github.com/ONGQ0019/filedumps/blob/main/llms.PNG?raw=true"
+  />     
   </Accordion>
 </AccordionGroup>
 
-Curious about what changed in a CLI version? [Check out the CLI changelog.](/changelog/command-line)
+
+
+
+## File to Text Generation
+
+<AccordionGroup>
+  <Accordion title="File Type: CSV, Docx, PDF, TXT">
+M1-GPT can take in any of the suported file type and extract the context from it. This context can then be fed back into M1-GPT for further analysis.
+
+ **Example:**
+   <img
+    style={{ borderRadius: '0.5rem', width: '500px', height: 'auto' }}
+    src="https://github.com/ONGQ0019/filedumps/blob/main/incidentcsv.PNG?raw=true"
+  />     
+  </Accordion>
+</AccordionGroup>
+
+
+<AccordionGroup>
+  <Accordion title="File Type: PNG, JPEG">
+M1-GPT can take in any of the suported file type and extract the context from it. This context can then be fed back into M1-GPT for further analysis.
+Below are some examples where we use M1-GPT to read diagrams and answer Mathematical questions.
+
+ **Input Image 1:**
+   <img
+    style={{ borderRadius: '0.5rem', width: '500px', height: 'auto' }}
+src="https://github.com/ONGQ0019/filedumps/blob/main/types_genai.png?raw=true"    
+  />  
+
+ **Output Image 1:**
+   <img
+    style={{ borderRadius: '0.5rem', width: '500px', height: 'auto' }}
+    src="https://github.com/ONGQ0019/filedumps/blob/main/outputimage1.PNG?raw=true"
+  />     
+  ---
+ **Input Image 2:**
+   <img
+    style={{ borderRadius: '0.5rem', width: '500px', height: 'auto' }}
+src="https://github.com/ONGQ0019/filedumps/blob/main/realmath.PNG?raw=true"    
+  />  
+
+ **Output Image 2:**
+   <img
+    style={{ borderRadius: '0.5rem', width: '500px', height: 'auto' }}
+    src="https://github.com/ONGQ0019/filedumps/blob/main/solved.PNG?raw=true"
+  />     
+
+
+
+  </Accordion>
+</AccordionGroup>
+
+
+## Text to Image Generation
+
+<AccordionGroup>
+  <Accordion title="Generate marketing and advertisement images">
+Generate ultra-realistic images using a few text prompts. Images can also be edited by panning left/right/up/down, zooming in/out, add variations e.g. 'holding a phone'.
+<Tabs>
+  <Tab title="Example Image">
+  <img
+    style={{ borderRadius: '0.5rem', width: '500px', height: 'auto' }}
+    src="https://github.com/ONGQ0019/filedumps/blob/main/imagen.PNG?raw=true"
+  /> 
+    </Tab>
+  <Tab title="Image Prompt">
+  ```md Image Prompt
+an asian lady standing infront of singapore's marina bay sand
+  ```
+  </Tab>
+
+</Tabs>
+
+
+<Info>MAIESTRO, an app we developed, demonstrates the enhanced potential of image generation when combined with customer and campaign data. [View Maiestro PDF](https://example.com/yourfile.zip)</Info>
+
+
+
+  </Accordion>
+</AccordionGroup>
+
+
+
+## Text to Text With M1 Documents
+<AccordionGroup>
+  <Accordion title="Question your own M1 database">
+After upserting your own department's content into M1-GPT, you can proceed to ask any questions about your content in M1-GPT. 
+
+ **M1 Web Example:**
+   <img
+    style={{ borderRadius: '0.5rem', width: '500px', height: 'auto' }}
+    src="https://github.com/ONGQ0019/filedumps/blob/main/dailypp.PNG?raw=true"
+  />     
+  </Accordion>
+
+  <Accordion title="Question your Data Store">
+By uploading information on Tableau data sources and dashboards, business users can directly retrieve relevant data sources that suits their needs without the hassle of going through all of the sources.
+
+ **Data Team Example:**
+   <img
+    style={{ borderRadius: '0.5rem', width: '500px', height: 'auto' }}
+    src="https://github.com/ONGQ0019/filedumps/blob/main/vas.PNG?raw=true"
+  />     
+  </Accordion>
+</AccordionGroup>
